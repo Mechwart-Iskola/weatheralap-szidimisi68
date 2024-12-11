@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.weather-card{
+    width: 100vw;
+    border-radius: 5px;
+    background-color: rgb(218, 218, 218);
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgb(163, 163, 163);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input{
+    padding: 5px;
+    width: 100%;
+    border:  1px rgb(179, 179, 179) solid;
+    border-radius: 2px;
+}
+
+button{
+    margin: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(65, 65, 218);
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    width: 95%;
+}
+
+button:hover{
+    background-color: rgb(93, 93, 226);
+}
+
+.weather-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 120px;
+    border: 2px blue solid;
+    margin: 10px 0px 0px 0px;
+    background-color: rgb(187, 187, 187);
+    padding-top: 20px;
+}
+
+.result-section{
+    margin: 5px;
+    padding: 5px;
+    padding-bottom: 20px;
+    background-color: white;
+    max-width: 95%;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(211, 211, 211);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.weather-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.weather-details p{
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+}
+
+@media (min-width:768px) {
+    .weather-card{
+    }
+
+    .search-container{
+        flex-direction: row;
+    }
+
+    .result-section{
+        max-width: fit-content;
+    }
+
+}
+
+@media (min-width:1024px)
+{
+
+    .weather-info{
+        flex-direction: row;
+    }
+    .weather-details{
+        flex-direction: row;
+    }
+}
